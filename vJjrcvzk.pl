@@ -8,12 +8,14 @@ bala('livianas').
 bala('pesadas').
 %ataque
 dispara('bala').
+impacta(jugador,enemigo).
+impacta(enemigo,jugador).
 %puntos
 puntos('tiempo').
 vidas(1)
 vidas(2)
 vidas(3)
-regenera('puntos,vida').
+regenera('vida').
 %movimiento
 direccion_nave('arriba').
 direccion_nave('abajo').
@@ -33,13 +35,12 @@ tiempo_inicial(10000).
 tiempo_final(0).
 %final
 %reglas
-impacto(X,Y):-(jugador)
-daño(X,Y):-impacto(X,Y).
+
+
+daño(X,Y):-dispara(A),impacta(X,Y).
+daño(Y,X):- dispara(A),impacta(Y,X).
 pierdevida(X):-daño(X,Y). 
 muere(X):-vidas(1),pierdevida(X).
 termina(X,Y):-tiempo(0).
 finaljuego(Y):-muere(X,Y);termina(A,Y).
 regenera:-vidas=<2,puntuacion==(2000).    
-
-
-
