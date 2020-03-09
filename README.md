@@ -1,6 +1,6 @@
 # Space Invaders
 
-### Se realiza la logica del juego space Invaders mediante el paradigma lógico usando el lenguaje de Programacion Prolog
+### Se realiza la logica del juego Space Invaders mediante el paradigma lógico usando el lenguaje de Programacion Prolog
 
 ### Realizado por : 
 
