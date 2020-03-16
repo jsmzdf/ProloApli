@@ -1,6 +1,6 @@
-# Space Invaders
+# Piedra-Papel-Tijera
 
-### Se realiza la logica del juego Space Invaders mediante el paradigma lógico usando el lenguaje de Programacion Prolog
+### Se realiza la logica del juego Piedra-Papel-Tijera mediante el paradigma lógico usando el lenguaje de Programacion Prolog
 
 ### Realizado por : 
 
